@@ -32,17 +32,21 @@
     <div class="fullcontainer">
         <div class="maincontent">
             <h1><em>SPEAK OUT </em>#TobaccoExposed</h1>
-            <h3>Enter your username below to get a custom image and put it as your profile picture to show your support</h3>
+            <h3>Enter your username, click on start, then finish. Once your image is generated, download it by "right-clicking and then clicking on save as</h3>
             <div class="inputcont">
                 <div class="container__item">
                     <form class="form">
                         <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
-                        <button type="button" id="entbtn" class="btn btn--primary btn--inside uppercase" onclick="getPhoto($('#usernameInput').val().trim())">Fetch</button>
+                        <button type="button" id="entbtn" class="btn btn--primary btn--inside uppercase" onclick="getPhoto($('#usernameInput').val().trim())">Start</button>
+
                     </form>
+
                 </div>
                 <br />
-                <img id="img1" class="hidden" src="/frame.png">
-                <canvas id="drawcanvas" class="" height="500" , width="500"></canvas>
+                <div class="canvascont">
+                    <img id="img1" class="hidden" src="/frame.png">
+                    <canvas id="drawcanvas" class="" height="500" , width="500"></canvas>
+                </div>
             </div>
             <br>
         </div>

@@ -1,4 +1,13 @@
 function getPhoto(a) {
+    var elem = document.getElementById("entbtn");
+    var etex = document.getElementById("usernameInput");
+    if (elem.innerHTML == "Start") elem.innerHTML = "Finish";
+    else if (elem.innerHTML == "Finish") elem.innerHTML = "New";
+    else if (elem.innerHTML == "New") {
+        etex.value = "";
+        etex.placeholder = "Enter new username"
+        elem.innerHTML = "Start";
+    }
     // validation for instagram usernames
     var regex = new RegExp(/^(?!.*\.\.)(?!.*\.$)[^\W][\w.]{0,29}$/);
     var validation = regex.test(a);
@@ -16,7 +25,6 @@ function getPhoto(a) {
     } else {
         alert('The username is invalid!')
     }
-
 }
 
 function drawonCanvas(x) {
