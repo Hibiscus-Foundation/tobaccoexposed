@@ -28,7 +28,6 @@
         </div>
     </nav>
     <div id="video-container">
-        <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
                 <h1><em>SPEAK OUT</em>#TobaccoExposed</h1>
@@ -36,7 +35,7 @@
                 <div class="container__item">
                     <form class="form">
                         <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
-                        <button type="button" class="btn btn--primary btn--inside uppercase" onclick="getPhoto($('#usernameInput').val().trim())">Fetch</button>
+                        <button type="button" id="entbtn" class="btn btn--primary btn--inside uppercase" onclick="getPhoto($('#usernameInput').val().trim())">Fetch</button>
                     </form>
                 </div>
                 <br />
