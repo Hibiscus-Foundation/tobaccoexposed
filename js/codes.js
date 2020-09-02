@@ -14,7 +14,6 @@ function getPhoto(a) {
             })
 
     } else {
-
         alert('The username is invalid!')
     }
 
@@ -22,7 +21,7 @@ function getPhoto(a) {
 
 function drawonCanvas(x) {
     // update img element
-    var c = document.getElementById("canvas");
+    var c = document.getElementById("drawcanvas");
     var ctx = c.getContext("2d");
     var img2 = new Image();
     img2.src = x;
