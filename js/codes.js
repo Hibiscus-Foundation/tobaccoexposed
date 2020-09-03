@@ -14,8 +14,12 @@ function getPhoto(a) {
     if (validation) {
         $.get("https://www.instagram.com/" + a + "/?__a=1")
             .done(function(data) {
-                var photoURL = data["graphql"]["user"]["profile_pic_url_hd"];
-                drawonCanvas(photoURL);
+                if (data["graphql"]["user"]["profile_pic_url_hd"]) {
+                    var photoURL = data["graphql"]["user"]["profile_pic_url_hd"];
+                    drawonCanvas(photoURL);
+                } else {
+                    alert("Instagram's API is down, Please try again later")
+                }
             })
             .fail(function() {
                 // code for 404 error 
@@ -32,8 +36,14 @@ function drawonCanvas(x) {
     var c = document.getElementById("drawcanvas");
     var ctx = c.getContext("2d");
     var img2 = new Image();
+    img2.crossOrigin = "anonymous"
     img2.src = x;
     ctx.drawImage(img2, 50, 50, 400, 400);
     var img1 = document.getElementById("img1");
     ctx.drawImage(img1, 0, 0, 500, 500);
+    var img = c.toDataURL('image/jpeg');
+    $('.merged-image').attr('src', img);
+    $('.downloadimage').attr('href', img);
+
+    $('.merged-image').removeClass('hidden');
 }

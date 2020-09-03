@@ -104,12 +104,21 @@ body::-webkit-scrollbar {
     z-index: 10;
 }
 
-.canvascont {
+.finalimage {
     position: absolute;
     top: 800px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+}
+
+.merged-image {
+    max-width: 100%;
+    /* position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; */
 }
 
 
