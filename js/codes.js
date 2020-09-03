@@ -41,7 +41,7 @@ function drawonCanvas(x) {
     ctx.drawImage(img2, 50, 50, 400, 400);
     var img1 = document.getElementById("img1");
     ctx.drawImage(img1, 0, 0, 500, 500);
-    var img = c.toDataURL('image/jpeg');
+    var img = c.toDataURL('image/png');
     $('.merged-image').attr('src', img);
     $('.downloadimage').attr('href', img);
     $('.merged-image').removeClass('hidden');
