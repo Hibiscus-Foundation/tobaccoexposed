@@ -44,6 +44,5 @@ function drawonCanvas(x) {
     var img = c.toDataURL('image/jpeg');
     $('.merged-image').attr('src', img);
     $('.downloadimage').attr('href', img);
-
     $('.merged-image').removeClass('hidden');
 }
