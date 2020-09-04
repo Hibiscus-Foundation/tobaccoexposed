@@ -1,296 +1,304 @@
-    body {
-        font-family: 'Kanit', sans-serif;
-    }
-    /* Nav Bar */
-    
-    #navbar {
-        position: fixed;
-        top: 0;
-        height: 80px;
-        width: 100%;
-        z-index: 10;
-    }
-    
-    body,
-    html {
-        height: 100%;
-        min-height: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    
-    body::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    
-    .btn {
-        background-color: DodgerBlue;
-        border: none;
-        color: white;
-        padding: 12px 30px;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    
-    .fullcontainer {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    
-    .video-container,
-    .maincontent {
-        padding-top: 50px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    .video-container {
-        overflow: hidden;
-    }
-    
-    .maincontent {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.maincontent h1 {
-            font-size: 80px;
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.maincontent h1 {
-            font-size: 25px;
-        }
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.maincontent h3 {
-            font-size: 25px;
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.maincontent h3 {
-            font-size: 2.75vw;
-        }
-    }
-    
-    .maincontent h1 {
-        padding-top: 5%;
-        text-transform: uppercase;
-        color: #fff;
-        letter-spacing: 2px;
-        font-weight: 500;
-        text-align: center;
-    }
-    
-    .maincontent h3 {
-        padding-left: 20%;
-        padding-right: 20%;
-        text-transform: uppercase;
-        color: #fff;
-        letter-spacing: 2px;
-        font-weight: 200;
-        text-align: center;
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.footer {
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.footer {
-            text-align: center;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 12px;
-        }
-    }
-    
-    .footer {
-        top: 97%;
-        color: white;
-        position: absolute;
-        z-index: 1000;
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.github {
-            top: 3%;
-            left: 92%;
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.github {
-            top: 3%;
-            left: 75%;
-        }
-    }
-    
-    .github {
-        color: white;
-        position: absolute;
-        z-index: 100;
-    }
-    
-    .heart {
-        color: #e25555;
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.container__item {
-            top: 47%;
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.container__item {
-            top: 50%;
-        }
-    }
-    
-    .container__item {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-    }
-    
-    @media screen and (min-width: 815px) {
-        div.finalimage {
-            top: 75%;
-            max-width: 20%;
-            left: 49.5%;
-            transform: translate(-50%, -50%);
-        }
-    }
-    
-    @media screen and (max-width: 814px) {
-        div.finalimage {
-            top: 77%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-    
-    .finalimage {
-        position: absolute;
-        z-index: 10;
-    }
-    
-    .merged-image {
-        max-width: 100%;
-    }
-    /* INPUT BUTTON */
-    
-     :root {
-        background: #f5f6fa;
-        color: #9c9c9c;
-        font: 1rem "PT Sans", sans-serif;
-    }
-    
-    a {
-        color: inherit;
-    }
-    
-    a:hover {
-        color: #7f8ff4;
-    }
-    
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .textbtn {
-        display: inline-block;
-        background: transparent;
-        color: inherit;
-        font: inherit;
-        border: 0;
-        outline: 0;
-        padding: 0;
-        transition: all 200ms ease-in;
-        cursor: pointer;
-    }
-    
-    .btn--primary {
-        background: #7f8ff4;
-        color: #fff;
-        box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
-        border-radius: 2px;
-        padding: 12px 36px;
-    }
-    
-    .btn--primary:hover {
-        background: #6c7ff2;
-    }
-    
-    .btn--primary:active {
-        background: #7f8ff4;
-        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
-    }
-    
-    .btn--inside {
-        margin-left: 190px;
-    }
-    
-    .form__field {
-        width: 100%;
-        background: #fff;
-        color: #a3a3a3;
-        font: inherit;
-        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
-        border: 0;
-        outline: 0;
-        padding: 22px 18px;
-    }
-    /* Darker background on mouse-over */
-    
-    .btn:hover {
-        background-color: RoyalBlue;
-    }
-    /* Keyframes */
-    
-    @keyframes totop-in {
-        0% {
-            top: 600px;
-            opacity: 0;
-        }
-        100% {
-            top: 0%;
-            opacity: 1;
-        }
-    }
-    
-    @keyframes totop-out {
-        0% {
-            top: 0px;
-            opacity: 1;
-        }
-        100% {
-            top: -100%;
-            opacity: 0;
-        }
-    }
+body {
+  font-family: "Kanit", sans-serif;
+}
+/* Nav Bar */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+}
+
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fullcontainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video-container,
+.maincontent {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-container {
+  overflow: hidden;
+}
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+@media screen and (min-width: 815px) {
+  div.maincontent h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  div.maincontent h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 815px) {
+  div.maincontent h3 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  div.maincontent h3 {
+    font-size: 2.75vw;
+  }
+}
+
+.maincontent h1 {
+  padding-top: 5%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.maincontent h3 {
+  padding-left: 20%;
+  padding-right: 20%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (min-width: 815px) {
+  div.footer {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 814px) {
+  div.footer {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+  }
+}
+
+.footer {
+  top: 97%;
+  color: white;
+  position: absolute;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 815px) {
+  div.github {
+    top: 3%;
+    left: 92%;
+  }
+}
+
+@media screen and (max-width: 814px) {
+  div.github {
+    top: 3%;
+    left: 75%;
+  }
+}
+
+.github {
+  color: white;
+  position: absolute;
+  z-index: 100;
+}
+
+.heart {
+  color: #e25555;
+}
+
+.inputcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalimage {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 10%;
+  left: calc(30%-250px);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.finalimage .focused {
+  background-color: #9c9c9c;
+}
+
+.merged-image .position-adjust {
+  max-height: 50%;
+  max-width: 50%;
+}
+/* INPUT BUTTON */
+
+:root {
+  background: #f5f6fa;
+  color: #9c9c9c;
+  font: 1rem "PT Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: #7f8ff4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.textbtn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #7f8ff4;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+
+.btn--primary:hover {
+  background: #6c7ff2;
+}
+
+.btn--primary:active {
+  background: #7f8ff4;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--secondary {
+  background: #7ff489;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 12px 36px;
+}
+
+.btn--primary:hover {
+  background: #71df7a;
+}
+
+.btn--primary:active {
+  background: #7ff489;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--inside {
+  margin-left: 0px;
+}
+
+.form__field {
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 22px 18px;
+}
+/* Darker background on mouse-over */
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+/* Keyframes */
+
+@keyframes totop-in {
+  0% {
+    top: 600px;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes totop-out {
+  0% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: -100%;
+    opacity: 0;
+  }
+}
