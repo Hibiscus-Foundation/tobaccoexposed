@@ -15,7 +15,7 @@
     html {
         height: 100%;
         min-height: 100%;
-        overflow-y: scroll;
+        overflow-y: hidden;
         overflow-x: hidden;
     }
     
@@ -82,7 +82,7 @@
     
     @media screen and (max-width: 814px) {
         div.maincontent h3 {
-            font-size: 12px;
+            font-size: 2.75vw;
         }
     }
     
@@ -106,6 +106,53 @@
     }
     
     @media screen and (min-width: 815px) {
+        div.footer {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    @media screen and (max-width: 814px) {
+        div.footer {
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+    }
+    
+    .footer {
+        top: 97%;
+        color: white;
+        position: absolute;
+        z-index: 1000;
+    }
+    
+    @media screen and (min-width: 815px) {
+        div.github {
+            top: 3%;
+            left: 92%;
+        }
+    }
+    
+    @media screen and (max-width: 814px) {
+        div.github {
+            top: 3%;
+            left: 75%;
+        }
+    }
+    
+    .github {
+        color: white;
+        position: absolute;
+        z-index: 100;
+    }
+    
+    .heart {
+        color: #e25555;
+    }
+    
+    @media screen and (min-width: 815px) {
         div.container__item {
             top: 47%;
         }
@@ -126,30 +173,28 @@
     
     @media screen and (min-width: 815px) {
         div.finalimage {
-            top: 82%;
+            top: 75%;
+            max-width: 20%;
+            left: 49.5%;
+            transform: translate(-50%, -50%);
         }
     }
     
     @media screen and (max-width: 814px) {
         div.finalimage {
             top: 77%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     
     .finalimage {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
         z-index: 10;
     }
     
     .merged-image {
         max-width: 100%;
-        /* position: absolute;
-    top: 800px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10; */
     }
     /* INPUT BUTTON */
     
