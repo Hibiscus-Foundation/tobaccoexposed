@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>HFSW #TobaccoExposed</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>HFSW #TobaccoExposed</title>
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png" />
 
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <script src="js/vendor/jquery-3.5.1.min.js"></script>
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/codes.js"></script>
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/vendor/jquery-3.5.1.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/codes.js"></script>
+    </head>
 
-<body>
-    <div id="navbar">
-        <div id="logo">
-            <a href="index.html"><img src="logoh.png" height="80"></img>
-            </a>
+    <body>
+        <div id="navbar">
+            <div id="logo-container">
+                <a href="index.html"><img src="logoh.png" height="80"></img>
+                </a>
+            </div>
+            <div class="github-container">
+                <a href="https://github.com/Hibiscus-Foundation/tobaccoexposed" target="_blank"><i class="fa fa-github"
+                        style="font-size:48px"></i>
+                </a>
+            </div>
         </div>
 
-    </div>
-    <div class="github">
-        <a href="https://github.com/Hibiscus-Foundation/tobaccoexposed" target="_blank">View code on<img src="github.png" height="50"></img>
-        </a>
-    </div>
-    <div class="fullcontainer">
-        <div class="maincontent">
-            <h1><em>SPEAK OUT </em>#TobaccoExposed</h1>
-            <h3>Enter your username, click on start, then finish. Once your image is generated, simply click on it to download. Then you can use it to show your support to the movement!</h3>
-            <div class="inputcont">
-                <div class="container__item">
-                    <form class="form">
-                        <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
-                        <button type="button" id="entbtn" class="btn btn--primary btn--inside uppercase" onclick="getPhoto($('#usernameInput').val().trim())">Start</button>
-                    </form>
+        <div class="fullcontainer">
+            <div class="maincontent">
+                <div class="title-container">
+                    <h1><em>SPEAK OUT </em>#TobaccoExposed</h1>
+                    <h3>Enter your username, click on start, then finish. Once your image is generated,
+                        simply click on it to download. Then you can use it to show your support to the movement!</h3>
                 </div>
+
+
+                <form class="form">
+                    <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
+                    <button type="button" class="btn btn--primary btn--inside uppercase"
+                        onclick="getPhoto($('#usernameInput').val().trim())">Start</button>
+                </form>
+
                 <br />
                 <img id="img1" class="hidden" src="frame.png">
                 <canvas id="drawcanvas" class="hidden" height="500" , width="500"></canvas>
@@ -55,24 +62,29 @@
             <br>
         </div>
 
-        <div id="video-container ">
+        <!---   <div id="video-container ">
             <video autoplay=" " loop=" " muted>
         	<source src="Vidloop-1.mp4 " type="video/mp4 " />
         </video>
         </div>
-    </div>
+        -->
+        </div>
 
-    <div class="footer">
-        Made with <span class="heart">❤</span> by <a href="https://github.com/Purukitto" target="_blank">Purukitto</a> for <a href="hibiscusfoundation.org" target="_blank">Hibiscus Foundation</a></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js "><\/script>')
-    </script>
+        <div class="footer">
+            Made with <span class="heart">❤</span> by <a href="https://github.com/Purukitto"
+                target="_blank">Purukitto</a> for <a href="hibiscusfoundation.org" target="_blank">Hibiscus
+                Foundation</a>
+        </div>
 
-    <script src="js/vendor/bootstrap.min.js "></script>
-    <script src="js/plugins.js "></script>
-    <script src="js/main.js "></script>
-</body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js "><\/script>')
+        </script>
+
+        <script src="js/vendor/bootstrap.min.js "></script>
+        <script src="js/plugins.js "></script>
+        <script src="js/main.js "></script>
+    </body>
 
 </html>
