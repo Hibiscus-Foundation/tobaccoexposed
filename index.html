@@ -36,39 +36,36 @@
             </div>
         </div>
 
-        <div class="fullcontainer">
-            <div class="maincontent">
-                <div class="title-container">
-                    <h1><em>SPEAK OUT </em>#TobaccoExposed</h1>
-                    <h3>Enter your username, click on start, then finish. Once your image is generated,
-                        simply click on it to download. Then you can use it to show your support to the movement!</h3>
-                </div>
 
-
-                <form class="form">
-                    <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
-                    <button type="button" class="btn btn--primary btn--inside uppercase"
-                        onclick="getPhoto($('#usernameInput').val().trim())">Start</button>
-                </form>
-
-                <br />
-                <img id="img1" class="hidden" src="frame.png">
-                <canvas id="drawcanvas" class="hidden" height="500" , width="500"></canvas>
-                <div class="finalimage">
-                    <a class="downloadimage" href="" download="HFSWinstagram">
-                        <img class="merged-image hidden" alt="merged image" /> </a>
-                </div>
+        <div class="maincontent">
+            <div class="video-container">
+                <video src="Vidloop-1.mp4" autoplay loop muted></video>
             </div>
-            <br>
-        </div>
+            <div class="title-container">
+                <h1><em>SPEAK OUT </em>#TobaccoExposed</h1>
+                <h3>Enter your username, click on start, then finish. Once your image is generated,
+                    simply click on it to download. Then you can use it to show your support to the movement!</h3>
+            </div>
 
-        <!---   <div id="video-container ">
-            <video autoplay=" " loop=" " muted>
-        	<source src="Vidloop-1.mp4 " type="video/mp4 " />
-        </video>
+
+            <form class="form">
+                <input type="text" class="form__field" id="usernameInput" placeholder="Your Instagram Username" />
+                <button type="button" id="entbtn" class="btn--primary btn--inside uppercase"
+                    onclick="getPhoto($('#usernameInput').val().trim())">Start</button>
+            </form>
+
+            <div class="finalimage hidden">
+                <img id="img1" src="frame.png">
+                <img class="merged-image" alt="merged image" /> </a>
+            </div>
+
         </div>
-        -->
-        </div>
+        <br>
+
+
+
+
+
 
 
         <div class="footer">
