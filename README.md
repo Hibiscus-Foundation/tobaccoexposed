@@ -13,3 +13,11 @@ HFSW has taken up this mission, along with the WHO, to combat and raise awarenes
 
 Hibiscus Foundation for social welfare (HFSW) is a Non-for-profit, Non-partisan organisation working primarily on mental health but also on other areas such as women and child empowerment, and universal healthcare. 
 We call on the contributors to join us on this war against tobacco.
+
+### Contributors
+
+<a href="https://github.com/Hibiscus-Foundation/tobaccoexposed/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=Hibiscus-Foundation/tobaccoexposed" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
